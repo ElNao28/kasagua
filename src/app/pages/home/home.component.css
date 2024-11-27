@@ -1,0 +1,7 @@
+.header{
+  background-image: url('../../../../public/img/3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+}
