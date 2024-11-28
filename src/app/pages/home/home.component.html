@@ -12,18 +12,28 @@
       <li class="hover:text-gray-200">
         <a [routerLink]="['']" fragment="nosotros">Nosotros</a>
       </li>
-      <li class="hover:text-gray-200">Paquetes</li>
-      <li class="hover:text-gray-200">Anuncios</li>
-      <li class="hover:text-gray-200">Contactos</li>
-      <li class="hover:text-gray-200">Blog</li>
+      <li class="hover:text-gray-200">
+        <a routerLink="">Paquetes</a>
+      </li>
+      <li class="hover:text-gray-200">
+        <a routerLink="">Anuncios</a>
+      </li>
+      <li class="hover:text-gray-200">
+        <a routerLink="">Contactos</a>
+      </li>
+      <li class="hover:text-gray-200">
+        <a routerLink="">Blog</a>
+      </li>
     </ul>
   </nav>
 </header>
-<section class="mx-10" id="nosotros">
-  <div class="bg-gray-100 p-5 rounded-md flex gap-5 mb-5">
-    <img src="img/6.jpg" alt="Nosotros" class="w-1/4 rounded-md" />
-    <div>
-      <h2 class="font-bold text-xl">Quienes somos?</h2>
+<section class="mx-10 overflow-hidden" id="nosotros" #nosotros>
+  <div class="bg-gray-100 p-5 rounded-md flex gap-5 mb-5 w-full" [ngClass]="{'nosChildren': visible}">
+    <div class="w-1/4 rounded-md overflow-hidden">
+      <img src="img/6.jpg" alt="Nosotros" class="nosotrosImg w-full" />
+    </div>
+    <div class="w-3/4">
+      <h2 class="font-bold text-2xl text-center mb-5">¿Quienes somos?</h2>
       <p class="font-extralight">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo veritatis
         nulla cum voluptates optio a eius? Commodi, vero laudantium, iure dolor
