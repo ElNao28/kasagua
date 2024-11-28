@@ -3,6 +3,7 @@ import {
   AfterViewInit,
   Component,
   ElementRef,
+  OnInit,
   ViewChild,
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
@@ -15,10 +16,14 @@ import { RouterLink } from '@angular/router';
   styleUrl: './home.component.css',
 })
 
-export class HomeComponent implements AfterViewInit{
+export class HomeComponent implements AfterViewInit,OnInit{
 
   @ViewChild('nosotros') container!: ElementRef;
   public visible:boolean = false;
+  public textPresentation:string = "";
+  ngOnInit(): void {
+    this.changeText();
+  }
   ngAfterViewInit(): void {
     const observer = new IntersectionObserver((entries)=>{
       entries.forEach(entry => {
@@ -30,5 +35,16 @@ export class HomeComponent implements AfterViewInit{
     })
     observer.observe(this.container.nativeElement)
   }
-
+  public changeText(){
+    const firstText:string = "Tu mejor opcion si de eventos especiales se trata";
+    let flag:number= 0;
+    let interval = setInterval(() => {
+        this.textPresentation = this.textPresentation + firstText[flag];
+        flag++;
+        if(flag >= firstText.length){
+            flag = 0;
+            clearInterval(interval)
+        }
+    }, 50);
+  }
 }

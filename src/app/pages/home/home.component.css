@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Ga+Maamli&display=swap');
 .header{
   background-image: url('../../../../public/img/3.jpg');
   background-size: cover;
@@ -8,6 +10,15 @@
 nav{
   animation: navbar ease-out;
   animation-timeline: scroll(root);
+}
+h1{
+  font-family: "Bungee Spice", sans-serif;
+  font-style: normal;
+}
+.presentation{
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .nosotrosImg{
   transform: scale(3px);
