@@ -1,13 +1,40 @@
-<header class="header">
-  <nav class="flex justify-between text-white font-bold px-5 py-3 items-center w-full">
-    <a routerLink="#"><img src="img/logoK.png" alt="Novedade-ar" class="w-32"></a>
-    <div class="flex gap-5">
-      <ul class="hover:text-gray-200"><a routerLink="home">Inicio</a></ul>
-      <ul class="hover:text-gray-200">Nosotros</ul>
-      <ul class="hover:text-gray-200">Paquetes</ul>
-      <ul class="hover:text-gray-200">Anuncios</ul>
-      <ul class="hover:text-gray-200">Contactos</ul>
-      <ul class="hover:text-gray-200">Blog</ul>
-    </div>
+<header class="header mb-5">
+  <nav
+    class="flex justify-between text-white font-bold px-5 py-3 items-center w-full sticky top-0"
+  >
+    <a routerLink="/"
+      ><img src="img/logoK.png" alt="Novedade-ar" class="w-32"
+    /></a>
+    <ul class="flex gap-5">
+      <li class="hover:text-gray-200">
+        <a routerLink="/home">Inicio</a>
+      </li>
+      <li class="hover:text-gray-200">
+        <a [routerLink]="['']" fragment="nosotros">Nosotros</a>
+      </li>
+      <li class="hover:text-gray-200">Paquetes</li>
+      <li class="hover:text-gray-200">Anuncios</li>
+      <li class="hover:text-gray-200">Contactos</li>
+      <li class="hover:text-gray-200">Blog</li>
+    </ul>
   </nav>
 </header>
+<section class="mx-10" id="nosotros">
+  <div class="bg-gray-100 p-5 rounded-md flex gap-5 mb-5">
+    <img src="img/6.jpg" alt="Nosotros" class="w-1/4 rounded-md" />
+    <div>
+      <h2 class="font-bold text-xl">Quienes somos?</h2>
+      <p class="font-extralight">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo veritatis
+        nulla cum voluptates optio a eius? Commodi, vero laudantium, iure dolor
+        nesciunt odit nisi nulla autem mollitia, officiis eos. Ab. Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Reiciendis totam eum est
+        facilis earum illum voluptate sapiente dolores porro fugit, itaque
+        recusandae quisquam ducimus quasi autem aspernatur! Hic, ab quia. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis
+        quis, quia eligendi error veniam harum mollitia quisquam pariatur quam
+        ut enim velit doloremque numquam quas illo. Minima, facere maxime!
+      </p>
+    </div>
+  </div>
+</section>

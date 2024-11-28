@@ -5,3 +5,20 @@
   background-repeat: none;
   height: 100vh;
 }
+nav{
+  animation: navbar ease-out;
+  animation-timeline: scroll(root);
+}
+@keyframes navbar{
+  0%{
+    opacity: 1;
+  }
+  30%{
+    opacity: .8;
+    background-color: black;
+  }
+  100%{
+    opacity: .8;
+    background-color: black;
+  }
+}
