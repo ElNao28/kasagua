@@ -7,6 +7,9 @@
   background-repeat: none;
   height: 100vh;
 }
+a{
+  text-shadow: 0 4px 2px rgb(0, 0, 0);
+}
 nav{
   animation: navbar ease-out;
   animation-timeline: scroll(root);
