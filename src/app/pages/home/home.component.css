@@ -26,6 +26,9 @@ h1{
 #contacto{
   background-color: #F6F6F6;
 }
+#servicios{
+  background-color: #161616;
+}
 @keyframes navbar{
   0%{
     opacity: 1;
