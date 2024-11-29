@@ -1,0 +1,22 @@
+.nosotrosImg{
+  transform: scale(3px);
+  transition: 0.2s ease-in-out;
+}
+.nosotrosImg:hover{
+  transform: scale(1.1);
+}
+.nosChildren{
+  transform: translateX(100%);
+  opacity: 0;
+  animation: viewNosotros 1s ease-out forwards;
+}
+@keyframes viewNosotros {
+  from{
+    opacity: 0;
+    /* transform: translateX(100%); */
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

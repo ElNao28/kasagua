@@ -1,5 +1,59 @@
-<header>
-  <nav>
-    <ul>Inicio</ul>
-  </nav>
-</header>
+<nav
+  class="flex justify-between text-white font-bold px-5 py-3 items-center w-full fixed z-10 top-0"
+>
+  <a routerLink="/"
+    ><img src="img/logoK.png" alt="Novedade-ar" class="w-32"
+  /></a>
+  <ul class="flex gap-5">
+    <li class="hover:text-gray-200">
+      <a routerLink="/home">Inicio</a>
+    </li>
+    <li class="hover:text-gray-200">
+      <a routerLink="" fragment="paquetes">Paquetes</a>
+    </li>
+    <li class="hover:text-gray-200">
+      <a routerLink="" fragment="servicios">Servicios</a>
+    </li>
+    <li class="hover:text-gray-200">
+      <a [routerLink]="['']" fragment="nosotros">Nosotros</a>
+    </li>
+    <li class="hover:text-gray-200">
+      <a routerLink="" fragment="contacto">Contacto</a>
+    </li>
+    <li class="hover:text-gray-200">
+      <a routerLink="">Blog</a>
+    </li>
+  </ul>
+</nav>
+<div class="slider mb-20">
+  <div class="flex items-center flex-col justify-center h-full">
+    <h1 class="font-extrabold text-white text-8xl">KASAGUA</h1>
+    <h2 class="text-4xl text-white presentation">{{ textPresentation }}</h2>
+  </div>
+</div>
+
+
+<section class="mx-5 mb-20" id="paquetes">
+  <app-paquetes></app-paquetes>
+</section>
+
+
+<section id="servicios" class="mb-20 py-10">
+  <app-servicios></app-servicios>
+</section>
+
+
+<section class="mx-10 overflow-hidden mb-20" id="nosotros">
+  <app-nosotros></app-nosotros>
+</section>
+
+
+<section id="contacto" class="mb-20 py-10">
+  <app-contacto></app-contacto>
+</section>
+
+
+
+<footer class="bg-gray-900 p-10">
+
+</footer>

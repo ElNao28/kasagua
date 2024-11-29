@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Ga+Maamli&display=swap');
+.slider{
+  background-image: url('../../../../public/img/3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+}
+a{
+  text-shadow: 0 4px 2px rgb(0, 0, 0);
+}
+nav{
+  animation: navbar ease-out;
+  animation-timeline: scroll(root);
+}
+h1{
+  font-family: "Yuji Mai", serif;
+  font-style: normal;
+}
+.presentation{
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#contacto{
+  background-color: #F6F6F6;
+}
+#servicios{
+  background-color: #161616;
+}
+@keyframes navbar{
+  0%{
+    opacity: 1;
+  }
+  30%{
+    opacity: .8;
+    background-color: black;
+  }
+  100%{
+    opacity: .8;
+    background-color: black;
+  }
+}
