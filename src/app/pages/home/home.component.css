@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Ga+Maamli&display=swap');
-.header{
+.slider{
   background-image: url('../../../../public/img/3.jpg');
   background-size: cover;
   background-position: center;
@@ -15,7 +15,7 @@ nav{
   animation-timeline: scroll(root);
 }
 h1{
-  font-family: "Bungee Spice", sans-serif;
+  font-family: "Yuji Mai", serif;
   font-style: normal;
 }
 .presentation{
@@ -56,11 +56,11 @@ h1{
     opacity: 1;
   }
   30%{
-    opacity: .9;
+    opacity: .8;
     background-color: black;
   }
   100%{
-    opacity: .9;
+    opacity: .8;
     background-color: black;
   }
 }
