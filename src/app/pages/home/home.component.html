@@ -1,4 +1,6 @@
-<nav class="flex justify-between text-white font-bold px-5 py-3 items-center w-full fixed z-10 top-0">
+<nav
+  class="flex justify-between text-white font-bold px-5 py-3 items-center w-full fixed z-10 top-0"
+>
   <a routerLink="/"
     ><img src="img/logoK.png" alt="Novedade-ar" class="w-32"
   /></a>
@@ -10,13 +12,13 @@
       <a routerLink="" fragment="paquetes">Paquetes</a>
     </li>
     <li class="hover:text-gray-200">
-      <a routerLink="">Servicios</a>
+      <a routerLink="" fragment="servicios">Servicios</a>
     </li>
     <li class="hover:text-gray-200">
       <a [routerLink]="['']" fragment="nosotros">Nosotros</a>
     </li>
     <li class="hover:text-gray-200">
-      <a routerLink="">Contactos</a>
+      <a routerLink="" fragment="contacto">Contacto</a>
     </li>
     <li class="hover:text-gray-200">
       <a routerLink="">Blog</a>
@@ -29,15 +31,18 @@
     <h2 class="text-4xl text-white presentation">{{ textPresentation }}</h2>
   </div>
 </div>
-<section class="mx-28" id="paquetes">
+<section class="mx-28 mb-20" id="paquetes">
   <app-paquetes></app-paquetes>
 </section>
-<section>
+<section id="servicios" class="mb-20">
   <app-servicios></app-servicios>
 </section>
-<section>
-<app-contacto></app-contacto>
-</section>
-<section class="mx-10 overflow-hidden" id="nosotros">
+<section class="mx-10 overflow-hidden mb-20" id="nosotros">
   <app-nosotros></app-nosotros>
 </section>
+<section id="contacto" class="mb-20 py-10">
+  <app-contacto></app-contacto>
+</section>
+<footer class="bg-gray-950 p-10">
+
+</footer>
