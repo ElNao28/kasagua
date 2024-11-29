@@ -56,11 +56,11 @@ h1{
     opacity: 1;
   }
   30%{
-    opacity: .8;
+    opacity: .9;
     background-color: black;
   }
   100%{
-    opacity: .8;
+    opacity: .9;
     background-color: black;
   }
 }
