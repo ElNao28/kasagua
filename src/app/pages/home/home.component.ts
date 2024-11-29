@@ -7,34 +7,25 @@ import {
   ViewChild,
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { PaquetesComponent } from "../../components/paquetes/paquetes.component";
+import { NosotrosComponent } from "../../components/nosotros/nosotros.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink,NgClass],
+  imports: [RouterLink, PaquetesComponent, NosotrosComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 
-export class HomeComponent implements AfterViewInit,OnInit{
+export class HomeComponent implements OnInit{
 
-  @ViewChild('nosotros') container!: ElementRef;
-  public visible:boolean = false;
+
   public textPresentation:string = "";
   ngOnInit(): void {
     this.changeText();
   }
-  ngAfterViewInit(): void {
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          console.log('Element is visible')
-          this.visible = true;
-        }
-      })
-    })
-    observer.observe(this.container.nativeElement)
-  }
+
   public changeText(){
     const firstText:string = "Tu mejor opcion si de eventos especiales se trata";
     let flag:number= 0;
