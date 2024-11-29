@@ -9,11 +9,13 @@ import {
 import { RouterLink } from '@angular/router';
 import { PaquetesComponent } from "../../components/paquetes/paquetes.component";
 import { NosotrosComponent } from "../../components/nosotros/nosotros.component";
+import { ServiciosComponent } from "../../components/servicios/servicios.component";
+import { ContactoComponent } from "../../components/contacto/contacto.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, PaquetesComponent, NosotrosComponent],
+  imports: [RouterLink, PaquetesComponent, NosotrosComponent, ServiciosComponent, ContactoComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
