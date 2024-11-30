@@ -27,8 +27,9 @@ h1{
   background-color: #161616;
 }
 .up{
+  background-color: #1f1f1f;
   animation:up 0.5s alternate infinite;
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 .up:hover{
   animation-play-state: paused;
