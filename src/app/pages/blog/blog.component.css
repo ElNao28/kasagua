@@ -1,7 +1,6 @@
 .nav{
   background-color: rgb(12, 11, 11);
 }
-
 .galery{
   display: grid;
   grid-template-columns: repeat(4,1fr);
