@@ -26,6 +26,18 @@ h1{
 #servicios{
   background-color: #161616;
 }
+.up{
+  animation:up 0.5s alternate infinite;
+  animation-delay: 5s;
+}
+.up:hover{
+  animation-play-state: paused;
+}
+@keyframes up {
+  to{
+    transform: translateY(5px);
+  }
+}
 footer{
   background-color: #161616;
 }
