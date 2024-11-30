@@ -1,4 +1,4 @@
-nav{
+/* nav{
   animation: navbar ease-out;
   animation-timeline: scroll(root);
 }
@@ -14,4 +14,7 @@ nav{
     opacity: 1;
     background-color: rgba(37, 37, 37, 0.92);
   }
+} */
+.nav{
+  background-color: rgb(30, 30, 30);
 }
