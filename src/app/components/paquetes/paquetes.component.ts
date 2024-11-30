@@ -33,6 +33,9 @@ export class PaquetesComponent implements AfterViewInit {
             break;
         }
       }
+    },{
+      threshold: 0.5,
+      rootMargin: '0px 0px 0px 0px'
     });
     observer.observe(this.image1.nativeElement);
     observer.observe(this.image2.nativeElement);

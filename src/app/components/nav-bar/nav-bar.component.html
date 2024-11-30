@@ -1,0 +1,28 @@
+<nav
+  class="flex justify-between text-white font-bold px-5 py-3 items-center w-full absolute z-10 top-0"
+  [ngClass]="{'nav': type}"
+>
+  <a routerLink="/"
+    ><img src="img/logoK.png" alt="Novedade-ar" class="w-36"
+  /></a>
+  <ul class="flex gap-5">
+    <li class="hover:text-gray-200">
+      <a routerLink="/home">Inicio</a>
+    </li>
+    <li class="hover:text-gray-200">
+      <a routerLink="" fragment="paquetes">Paquetes</a>
+    </li>
+    <li class="hover:text-gray-200">
+      <a routerLink="" fragment="servicios">Servicios</a>
+    </li>
+    <li class="hover:text-gray-200">
+      <a [routerLink]="['']" fragment="nosotros">Nosotros</a>
+    </li>
+    <li class="hover:text-gray-200">
+      <a routerLink="" fragment="contacto">Contacto</a>
+    </li>
+    <li class="hover:text-gray-200">
+      <a routerLink="/blog">Blog</a>
+    </li>
+  </ul>
+</nav>

@@ -18,6 +18,9 @@ export class ServiciosComponent implements AfterViewInit{
       if(item.isIntersecting){
         this.visibleItem1 = true;
       }
+    },{
+      threshold: 1,
+      rootMargin: '0px 0px 0px 0px'
     });
     observer.observe(this.items1.nativeElement);
   }

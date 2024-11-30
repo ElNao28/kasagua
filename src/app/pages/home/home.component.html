@@ -1,30 +1,4 @@
-<nav
-  class="flex justify-between text-white font-bold px-5 py-3 items-center w-full absolute z-10 top-0"
->
-  <a routerLink="/"
-    ><img src="img/logoK.png" alt="Novedade-ar" class="w-36"
-  /></a>
-  <ul class="flex gap-5">
-    <li class="hover:text-gray-200">
-      <a routerLink="/home">Inicio</a>
-    </li>
-    <li class="hover:text-gray-200">
-      <a routerLink="" fragment="paquetes">Paquetes</a>
-    </li>
-    <li class="hover:text-gray-200">
-      <a routerLink="" fragment="servicios">Servicios</a>
-    </li>
-    <li class="hover:text-gray-200">
-      <a [routerLink]="['']" fragment="nosotros">Nosotros</a>
-    </li>
-    <li class="hover:text-gray-200">
-      <a routerLink="" fragment="contacto">Contacto</a>
-    </li>
-    <li class="hover:text-gray-200">
-      <a routerLink="">Blog</a>
-    </li>
-  </ul>
-</nav>
+<app-nav-bar></app-nav-bar>
 <div class="slider mb-20">
   <div class="flex items-center flex-col justify-center h-full">
     <h1 class="font-extrabold text-white text-8xl">KASAGUA</h1>
@@ -36,7 +10,7 @@
 
   <section class="mx-5 mb-20" id="paquetes">
     <div *ngIf="!visible">
-      <button class="fixed right-5 z-20 bottom-5 rounded-full text-white py-1 px-3 text-2xl up" (click)="up()">^</button>
+      <button class="fixed right-5 z-20 bottom-5 rounded-full text-white py-1 px-3 text-2xl up" routerLink="/">^</button>
     </div>
     <app-paquetes></app-paquetes>
   </section>

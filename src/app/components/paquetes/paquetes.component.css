@@ -4,10 +4,10 @@
 }
 .paquete_img_div{
   background-color: rgb(165, 139, 78);
-  transform: translateX(-100%);
+  transform: translateX(-105%);
 }
 .img_paquete{
-  width: 97%;
+  width: 100%;
 }
 .img1{
   transform: translateX(100%);

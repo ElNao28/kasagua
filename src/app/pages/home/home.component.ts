@@ -6,16 +6,17 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { PaquetesComponent } from "../../components/paquetes/paquetes.component";
 import { NosotrosComponent } from "../../components/nosotros/nosotros.component";
 import { ServiciosComponent } from "../../components/servicios/servicios.component";
 import { ContactoComponent } from "../../components/contacto/contacto.component";
+import { NavBarComponent } from "../../components/nav-bar/nav-bar.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, PaquetesComponent, NosotrosComponent, ServiciosComponent, ContactoComponent,NgIf],
+  imports: [PaquetesComponent, NosotrosComponent, ServiciosComponent, ContactoComponent, NgIf, NavBarComponent,RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -54,12 +55,5 @@ export class HomeComponent implements OnInit, AfterViewInit{
             clearInterval(interval)
         }
     }, 50);
-  }
-  public up(){
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior:'smooth'
-    });
   }
 }

@@ -12,6 +12,9 @@ img{
   opacity: 0;
   animation: viewNosotros 1s ease-out forwards;
 }
+.notVisible{
+  transform: translateX(100%);
+}
 .container{
   width: 50%;
   background-color: #F6F6F6;
