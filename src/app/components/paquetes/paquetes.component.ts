@@ -22,15 +22,12 @@ export class PaquetesComponent implements AfterViewInit {
         switch (container.target.id) {
           case 'img1':
             this.visible1 = true;
-            console.log('1')
             break;
           case 'img2':
             this.visible2 = true;
-            console.log('2')
             break;
           case 'img3':
             this.visible3 = true;
-            console.log('3')
             break;
           default:
             break;

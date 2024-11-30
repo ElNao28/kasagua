@@ -15,7 +15,6 @@ export class NosotrosComponent implements AfterViewInit {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log('Element is visible');
           this.visible = true;
         }
       });
