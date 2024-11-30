@@ -46,6 +46,11 @@
     <img class="rounded-md cursor-pointer" src="kasagua/8.jpg" alt="img1" (click)="expandImg('kasagua/8.jpg')" />
     <img class="rounded-md cursor-pointer" src="kasagua/9.jpg" alt="img1" (click)="expandImg('kasagua/9.jpg')" />
   </div>
-  <div id="view" #view class="flex justify-center w-screen h-screen top-0 overflow-hidden fixed z-20" [ngClass]="{'notVisible': !isExpand}" (click)="expandImg('')">
+  <div
+    id="view"
+    #view
+    class="flex justify-center w-screen h-screen top-0 overflow-hidden fixed z-20"
+    [ngClass]="{'notVisible': !isExpand}"
+    (click)="expandImg('')">
   </div>
 </section>
