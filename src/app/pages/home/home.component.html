@@ -1,5 +1,5 @@
 <nav
-  class="flex justify-between text-white font-bold px-5 py-3 items-center w-full fixed z-10 top-0"
+  class="flex justify-between text-white font-bold px-5 py-3 items-center w-full absolute z-10 top-0"
 >
   <a routerLink="/"
     ><img src="img/logoK.png" alt="Novedade-ar" class="w-36"
@@ -32,10 +32,14 @@
   </div>
 </div>
 
+<div #flag>
 
-<section class="mx-5 mb-20" id="paquetes">
-  <app-paquetes></app-paquetes>
-</section>
+  <section class="mx-5 mb-20" id="paquetes">
+    <div *ngIf="!visible">
+      <button class="fixed right-5 z-20 bottom-5 rounded-full bg-gray-900 text-white py-1 px-3 text-2xl" (click)="up()">^</button>
+    </div>
+    <app-paquetes></app-paquetes>
+  </section>
 
 
 <section id="servicios" class="mb-20 py-10">
@@ -43,7 +47,7 @@
 </section>
 
 
-<section class="mx-10 overflow-hidden mb-20" id="nosotros">
+<section class="overflow-hidden mb-20" id="nosotros">
   <app-nosotros></app-nosotros>
 </section>
 
@@ -52,6 +56,7 @@
   <app-contacto></app-contacto>
 </section>
 
+</div>
 
 
 <footer class="p-10">

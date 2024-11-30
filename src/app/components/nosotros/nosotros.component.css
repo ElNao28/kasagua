@@ -1,14 +1,20 @@
-.nosotrosImg{
-  transform: scale(3px);
-  transition: 0.2s ease-in-out;
+.containerN{
+  background-image: url('../../../../public/img/5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
 }
-.nosotrosImg:hover{
-  transform: scale(1.1);
+img{
+  width: 50%;
 }
 .nosChildren{
   transform: translateX(100%);
   opacity: 0;
   animation: viewNosotros 1s ease-out forwards;
+}
+.container{
+  width: 50%;
+  background-color: #F6F6F6;
 }
 @keyframes viewNosotros {
   from{
