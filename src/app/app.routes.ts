@@ -7,6 +7,10 @@ export const routes: Routes = [
     component:HomeComponent
   },
   {
+    path:'blog',
+    loadComponent: ()=> import('./pages/blog/blog.component').then(c=>c.BlogComponent)
+  },
+  {
     path:'',
     redirectTo:'home',
     pathMatch:'full'
