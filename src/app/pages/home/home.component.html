@@ -1,8 +1,8 @@
 <nav
-  class="flex justify-between text-white font-bold px-5 py-3 items-center w-full fixed z-10 top-0"
+  class="flex justify-between text-white font-bold px-5 py-3 items-center w-full absolute z-10 top-0"
 >
   <a routerLink="/"
-    ><img src="img/logoK.png" alt="Novedade-ar" class="w-32"
+    ><img src="img/logoK.png" alt="Novedade-ar" class="w-36"
   /></a>
   <ul class="flex gap-5">
     <li class="hover:text-gray-200">
@@ -32,10 +32,14 @@
   </div>
 </div>
 
+<div #flag>
 
-<section class="mx-5 mb-20" id="paquetes">
-  <app-paquetes></app-paquetes>
-</section>
+  <section class="mx-5 mb-20" id="paquetes">
+    <div *ngIf="!visible">
+      <button class="fixed right-5 z-20 bottom-5 rounded-full text-white py-1 px-3 text-2xl up" (click)="up()">^</button>
+    </div>
+    <app-paquetes></app-paquetes>
+  </section>
 
 
 <section id="servicios" class="mb-20 py-10">
@@ -43,17 +47,20 @@
 </section>
 
 
-<section class="mx-10 overflow-hidden mb-20" id="nosotros">
+<section class="overflow-hidden mb-20" id="nosotros">
   <app-nosotros></app-nosotros>
 </section>
 
 
-<section id="contacto" class="mb-20 py-10">
+<section id="contacto" class="mb-20 pt-10 pb-20 px-20">
   <app-contacto></app-contacto>
 </section>
 
+</div>
 
 
-<footer class="bg-gray-900 p-10">
-
+<footer class="p-10">
+  <p class="text-center text-white">
+    &copy; 2022 KASAGUA. Todos los derechos reservados.
+  </p>
 </footer>

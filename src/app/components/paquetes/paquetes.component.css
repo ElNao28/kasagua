@@ -1,6 +1,40 @@
+.paquete_img_div_right{
+  background-color: rgb(165, 139, 78);
+  transform: translateX(100%);
+}
 .paquete_img_div{
   background-color: rgb(165, 139, 78);
+  transform: translateX(-100%);
 }
 .img_paquete{
   width: 97%;
+}
+.img1{
+  transform: translateX(100%);
+  animation:img 1.5s forwards;
+}
+.img2{
+  transform: translateX(-100%);
+  animation:img 1.5s forwards;
+}
+.container{
+  opacity: 0;
+}
+.visible_container{
+  animation:visible 1.5s ease-in-out forwards;
+}
+@keyframes visible{
+  to{
+    opacity: 1;
+  }
+}
+@keyframes img{
+  to{
+    transform: translateX(-0.5%);
+  }
+}
+@keyframes img2{
+  to{
+    transform: translateX(0.5%);
+  }
 }

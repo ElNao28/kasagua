@@ -1,0 +1,13 @@
+.moveImg{
+  transform: rotate(0);
+  animation: move 0.5s alternate;
+  animation-iteration-count: 4;
+}
+@keyframes move{
+  from{
+    transform: rotate(-10deg);
+  }
+  to{
+    transform: rotate(10deg);
+  }
+}

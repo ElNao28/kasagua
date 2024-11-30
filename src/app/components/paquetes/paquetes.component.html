@@ -4,8 +4,8 @@
   </h2>
 </div>
 <ul>
-  <li class="flex mb-10">
-    <div class="flex flex-col items-center px-10 py-20 w-2/4">
+  <li class="flex mb-10 overflow-hidden">
+    <div class="flex flex-col items-center px-10 py-32 w-2/4 container" [ngClass]="{'visible_container': visible1}">
       <h3 class="text-center font-bold text-4xl mb-5 text-gray-800">CASA</h3>
       <ul>
         <li class="text-center mb-5 font-bold text-gray-900">
@@ -21,7 +21,7 @@
         </li>
       </ul>
     </div>
-    <div class="paquete_img_div w-2/4 flex justify-end relative">
+    <div class="paquete_img_div_right w-2/4 flex justify-end relative" id="img1" [ngClass]="{'img1': visible1}" #img1>
       <img
         src="img/5.jpg"
         alt="paquete 1"
@@ -30,7 +30,7 @@
     </div>
   </li>
   <li class="flex flex-row-reverse mb-10">
-    <div class="flex flex-col items-center px-10 py-20 w-2/4">
+    <div class="flex flex-col items-center px-10 py-32 w-2/4 container" [ngClass]="{'visible_container': visible2}">
       <h3 class="text-center font-bold text-4xl mb-5 text-gray-800">JARDIN</h3>
       <ul>
         <li class="text-center mb-5 font-bold text-gray-900">
@@ -46,7 +46,7 @@
         </li>
       </ul>
     </div>
-    <div class="paquete_img_div w-2/4 flex relative">
+    <div class="paquete_img_div w-2/4 flex relative" id="img2" [ngClass]="{'img2': visible1}" #img2>
       <img
         src="kasagua/3.jpg"
         alt="paquete 1"
@@ -54,8 +54,8 @@
       />
     </div>
   </li>
-  <li class="flex mb-10">
-    <div class="flex flex-col items-center px-10 py-20 w-2/4">
+  <li class="flex mb-20 overflow-hidden">
+    <div class="flex flex-col items-center px-10 py-32 w-2/4 container" [ngClass]="{'visible_container': visible3}">
       <h3 class="text-center font-bold text-4xl mb-5 text-gray-800">
         CASA Y JARDIN
       </h3>
@@ -73,7 +73,7 @@
         </li>
       </ul>
     </div>
-    <div class="paquete_img_div w-2/4 flex justify-end relative">
+    <div class="paquete_img_div_right w-2/4 flex justify-end relative" id="img3" [ngClass]="{'img1': visible3}" #img3>
       <img
         src="img/1.jpg"
         alt="paquete 1"

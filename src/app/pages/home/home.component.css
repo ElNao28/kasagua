@@ -7,9 +7,6 @@
   background-repeat: none;
   height: 100vh;
 }
-a{
-  text-shadow: 0 4px 2px rgb(0, 0, 0);
-}
 nav{
   animation: navbar ease-out;
   animation-timeline: scroll(root);
@@ -29,16 +26,32 @@ h1{
 #servicios{
   background-color: #161616;
 }
+.up{
+  background-color: #1f1f1f;
+  animation:up 0.5s alternate infinite;
+  animation-delay: 3s;
+}
+.up:hover{
+  animation-play-state: paused;
+}
+@keyframes up {
+  to{
+    transform: translateY(5px);
+  }
+}
+footer{
+  background-color: #161616;
+}
 @keyframes navbar{
   0%{
     opacity: 1;
   }
   30%{
-    opacity: .8;
-    background-color: black;
+    opacity: 1;
+    background-color: rgba(37, 37, 37, 0.92);
   }
   100%{
-    opacity: .8;
-    background-color: black;
+    opacity: 1;
+    background-color: rgba(37, 37, 37, 0.92);
   }
 }
