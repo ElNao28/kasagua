@@ -1,0 +1,32 @@
+.nav{
+  background-color: rgb(12, 11, 11);
+}
+
+.galery{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 0.3rem;
+}
+nav{
+  animation: navbar ease-out;
+  animation-timeline: scroll(root);
+}
+#view{
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.notVisible{
+  visibility: hidden;
+}
+@keyframes navbar{
+  0%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 1;
+    background-color: rgba(37, 37, 37, 0.92);
+  }
+  100%{
+    opacity: 1;
+    background-color: rgba(37, 37, 37, 0.92);
+  }
+}
