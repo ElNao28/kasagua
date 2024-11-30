@@ -23,7 +23,9 @@ export class PaquetesComponent implements AfterViewInit, OnInit {
   public ph: string = '';
 
   ngOnInit(): void {
-    this.getParameters();
+    setInterval(() => {
+      this.getParameters();
+    }, 5000);
   }
   ngAfterViewInit(): void {
     const observer = new IntersectionObserver(
