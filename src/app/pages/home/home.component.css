@@ -7,9 +7,6 @@
   background-repeat: none;
   height: 100vh;
 }
-a{
-  text-shadow: 0 4px 2px rgb(0, 0, 0);
-}
 nav{
   animation: navbar ease-out;
   animation-timeline: scroll(root);
@@ -38,10 +35,10 @@ footer{
   }
   30%{
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.852);
+    background-color: rgba(37, 37, 37, 0.92);
   }
   100%{
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.852);
+    background-color: rgba(37, 37, 37, 0.92);
   }
 }
