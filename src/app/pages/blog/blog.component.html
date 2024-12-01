@@ -1,56 +1,133 @@
-<nav
-  class="flex justify-between text-white font-bold px-5 py-3 items-center w-full sticky z-10 top-0 nav"
->
-  <a routerLink="/"
-    ><img src="img/logoK.png" alt="Novedade-ar" class="w-36"
-  /></a>
-  <ul class="flex gap-5">
-    <li class="hover:text-gray-200">
-      <a routerLink="/home">Inicio</a>
-    </li>
-    <li class="hover:text-gray-200">
-      <a routerLink="" fragment="paquetes">Paquetes</a>
-    </li>
-    <li class="hover:text-gray-200">
-      <a routerLink="" fragment="servicios">Servicios</a>
-    </li>
-    <li class="hover:text-gray-200">
-      <a [routerLink]="['']" fragment="nosotros">Nosotros</a>
-    </li>
-    <li class="hover:text-gray-200">
-      <a routerLink="" fragment="contacto">Contacto</a>
-    </li>
-    <li class="hover:text-gray-200">
-      <a routerLink="/galeria">Galeria</a>
-    </li>
-  </ul>
-</nav>
+<app-loading *ngIf="isLoader"></app-loading>
+<div *ngIf="!isLoader">
+  <nav
+    class="flex justify-between text-white font-bold px-5 py-3 items-center w-full sticky z-10 top-0 nav"
+  >
+    <a routerLink="/"
+      ><img src="img/logoK.png" alt="Novedade-ar" class="w-36"
+    /></a>
+    <ul class="flex gap-5">
+      <li class="hover:text-gray-200">
+        <a routerLink="/home">Inicio</a>
+      </li>
+      <li class="hover:text-gray-200">
+        <a routerLink="" fragment="paquetes">Paquetes</a>
+      </li>
+      <li class="hover:text-gray-200">
+        <a routerLink="" fragment="servicios">Servicios</a>
+      </li>
+      <li class="hover:text-gray-200">
+        <a [routerLink]="['']" fragment="nosotros">Nosotros</a>
+      </li>
+      <li class="hover:text-gray-200">
+        <a routerLink="" fragment="contacto">Contacto</a>
+      </li>
+      <li class="hover:text-gray-200">
+        <a routerLink="/galeria">Galeria</a>
+      </li>
+    </ul>
+  </nav>
 
-<section class="my-10 overflow-hidden">
-  <div class="flex justify-center">
-    <h2 class="font-bold text-4xl text-center border-b-2 border-black pb-2 mb-5">GALERIA DE FOTOS</h2>
-  </div>
-  <div class="galery mx-5">
-    <img class="rounded-md cursor-pointer" src="img/1.jpg" alt="img1" (click)="expandImg('img/1.jpg')" />
-    <img class="rounded-md cursor-pointer" src="img/2.jpg" alt="img1" (click)="expandImg('img/2.jpg')" />
-    <img class="rounded-md cursor-pointer" src="img/3.jpg" alt="img1" (click)="expandImg('img/3.jpg')" />
-    <img class="rounded-md cursor-pointer" src="img/4.jpg" alt="img1" (click)="expandImg('img/4.jpg')" />
-    <img class="rounded-md cursor-pointer" src="img/5.jpg" alt="img1" (click)="expandImg('img/5.jpg')" />
-    <img class="rounded-md cursor-pointer" src="kasagua/1.jpg" alt="img1" (click)="expandImg('kasagua/1.jpg')" />
-    <img class="rounded-md cursor-pointer" src="kasagua/2.jpg" alt="img1" (click)="expandImg('kasagua/2.jpg')" />
-    <img class="rounded-md cursor-pointer" src="kasagua/3.jpg" alt="img1" (click)="expandImg('kasagua/3.jpg')" />
-    <img class="rounded-md cursor-pointer" src="kasagua/4.jpg" alt="img1" (click)="expandImg('kasagua/4.jpg')" />
-    <img class="rounded-md cursor-pointer" src="kasagua/5.jpg" alt="img1" (click)="expandImg('kasagua/5.jpg')" />
-    <img class="rounded-md cursor-pointer" src="kasagua/6.jpg" alt="img1" (click)="expandImg('kasagua/6.jpg')" />
-    <img class="rounded-md cursor-pointer" src="kasagua/7.jpg" alt="img1" (click)="expandImg('kasagua/7.jpg')" />
-    <img class="rounded-md cursor-pointer" src="kasagua/8.jpg" alt="img1" (click)="expandImg('kasagua/8.jpg')" />
-    <img class="rounded-md cursor-pointer" src="kasagua/9.jpg" alt="img1" (click)="expandImg('kasagua/9.jpg')" />
-  </div>
-  <div
-    id="view"
-    #view
-    class="flex justify-center w-screen h-screen top-0 overflow-hidden fixed z-20"
-    [ngClass]="{'notVisible': !isExpand}"
-    (click)="expandImg('')">
-  </div>
-</section>
+  <section class="my-10 overflow-hidden">
+    <div class="flex justify-center">
+      <h2
+        class="font-bold text-4xl text-center border-b-2 border-black pb-2 mb-5"
+      >
+        GALERIA DE FOTOS
+      </h2>
+    </div>
+    <div class="galery mx-5">
+      <img
+        class="rounded-md cursor-pointer"
+        src="img/1.jpg"
+        alt="img1"
+        (click)="expandImg('img/1.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="img/2.jpg"
+        alt="img1"
+        (click)="expandImg('img/2.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="img/3.jpg"
+        alt="img1"
+        (click)="expandImg('img/3.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="img/4.jpg"
+        alt="img1"
+        (click)="expandImg('img/4.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="img/5.jpg"
+        alt="img1"
+        (click)="expandImg('img/5.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="kasagua/1.jpg"
+        alt="img1"
+        (click)="expandImg('kasagua/1.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="kasagua/2.jpg"
+        alt="img1"
+        (click)="expandImg('kasagua/2.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="kasagua/3.jpg"
+        alt="img1"
+        (click)="expandImg('kasagua/3.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="kasagua/4.jpg"
+        alt="img1"
+        (click)="expandImg('kasagua/4.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="kasagua/5.jpg"
+        alt="img1"
+        (click)="expandImg('kasagua/5.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="kasagua/6.jpg"
+        alt="img1"
+        (click)="expandImg('kasagua/6.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="kasagua/7.jpg"
+        alt="img1"
+        (click)="expandImg('kasagua/7.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="kasagua/8.jpg"
+        alt="img1"
+        (click)="expandImg('kasagua/8.jpg')"
+      />
+      <img
+        class="rounded-md cursor-pointer"
+        src="kasagua/9.jpg"
+        alt="img1"
+        (click)="expandImg('kasagua/9.jpg')"
+      />
+    </div>
+    <div
+      id="view"
+      #view
+      class="flex justify-center w-screen h-screen top-0 overflow-hidden fixed z-20"
+      [ngClass]="{ notVisible: !isExpand }"
+      (click)="expandImg('')"
+    ></div>
+  </section>
+</div>

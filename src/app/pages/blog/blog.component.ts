@@ -1,17 +1,19 @@
-import { NgClass } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { LoadingComponent } from "../../components/loading/loading.component";
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [RouterLink, NgClass],
+  imports: [RouterLink, NgClass, LoadingComponent,NgIf],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css',
 })
 export class BlogComponent {
   @ViewChild('view') viewContainer!: ElementRef;
   public isExpand: boolean = false;
+  public isLoader:boolean = true;
   public expandImg(url:string) {
     this.isExpand = !this.isExpand;
     if(!this.isExpand){
