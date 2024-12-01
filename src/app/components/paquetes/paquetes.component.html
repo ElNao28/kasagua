@@ -5,7 +5,12 @@
 </div>
 <ul>
   <li class="flex mb-10 overflow-hidden">
-    <div class="flex flex-col items-center px-10 py-32 w-2/4 container" [ngClass]="{'visible_container': visible1}" id="img1" #img1>
+    <div
+      class="flex flex-col items-center px-10 py-32 w-2/4 container"
+      [ngClass]="{ visible_container: visible1 }"
+      id="img1"
+      #img1
+    >
       <h3 class="text-center font-bold text-4xl mb-5 text-gray-800">CASA</h3>
       <ul>
         <li class="text-center mb-5 font-bold text-gray-900">
@@ -21,7 +26,10 @@
         </li>
       </ul>
     </div>
-    <div class="paquete_img_div_right w-2/4 flex justify-end relative" [ngClass]="{'img1': visible1}" >
+    <div
+      class="paquete_img_div_right w-2/4 flex justify-end relative"
+      [ngClass]="{ img1: visible1 }"
+    >
       <img
         src="img/5.jpg"
         alt="paquete 1"
@@ -30,7 +38,12 @@
     </div>
   </li>
   <li class="flex flex-row-reverse mb-10">
-    <div class="flex flex-col items-center px-10 py-32 w-2/4 container" [ngClass]="{'visible_container': visible2}" id="img2" #img2>
+    <div
+      class="flex flex-col items-center px-10 py-32 w-2/4 container"
+      [ngClass]="{ visible_container: visible2 }"
+      id="img2"
+      #img2
+    >
       <h3 class="text-center font-bold text-4xl mb-5 text-gray-800">JARDIN</h3>
       <ul>
         <li class="text-center mb-5 font-bold text-gray-900">
@@ -44,9 +57,27 @@
             natus repellendus iusto!
           </p>
         </li>
+        <li>
+          <h4 class="text-center font-bold mt-5 text-lg">Calidad del agua</h4>
+          <div class="flex justify-evenly text-center">
+            <p>
+              <span class="font-bold text-md">Temperatura</span>
+              <br />
+              {{ temperature }}
+            </p>
+            <p>
+              <span class="font-bold text-md">PH</span>
+              <br />
+              {{ ph }}
+            </p>
+          </div>
+        </li>
       </ul>
     </div>
-    <div class="paquete_img_div w-2/4 flex relative" [ngClass]="{'img2': visible2}">
+    <div
+      class="paquete_img_div w-2/4 flex relative"
+      [ngClass]="{ img2: visible2 }"
+    >
       <img
         src="kasagua/3.jpg"
         alt="paquete 1"
@@ -55,7 +86,12 @@
     </div>
   </li>
   <li class="flex mb-20 overflow-hidden">
-    <div class="flex flex-col items-center px-10 py-32 w-2/4 container" [ngClass]="{'visible_container': visible3}" id="img3" #img3>
+    <div
+      class="flex flex-col items-center px-10 py-32 w-2/4 container"
+      [ngClass]="{ visible_container: visible3 }"
+      id="img3"
+      #img3
+    >
       <h3 class="text-center font-bold text-4xl mb-5 text-gray-800">
         CASA Y JARDIN
       </h3>
@@ -71,9 +107,27 @@
             natus repellendus iusto!
           </p>
         </li>
+        <li>
+          <h4 class="text-center font-bold mt-5 text-lg">Calidad del agua</h4>
+          <div class="flex justify-evenly text-center">
+            <p>
+              <span class="font-bold text-md">Temperatura</span>
+              <br />
+              {{ temperature }}
+            </p>
+            <p>
+              <span class="font-bold text-md">PH</span>
+              <br />
+              {{ ph }}
+            </p>
+          </div>
+        </li>
       </ul>
     </div>
-    <div class="paquete_img_div_right w-2/4 flex justify-end relative"  [ngClass]="{'img1': visible3}" >
+    <div
+      class="paquete_img_div_right w-2/4 flex justify-end relative"
+      [ngClass]="{ img1: visible3 }"
+    >
       <img
         src="img/1.jpg"
         alt="paquete 1"

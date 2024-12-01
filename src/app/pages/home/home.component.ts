@@ -35,7 +35,6 @@ export class HomeComponent implements OnInit, AfterViewInit{
     const observer = new IntersectionObserver(entries => {
       const entry = entries[0];
       if(!entry.isIntersecting){
-        console.log("visible")
         this.visible = true;
       }
       else{
