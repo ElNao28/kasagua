@@ -1,5 +1,5 @@
 import { NgClass, NgIf } from '@angular/common';
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { LoadingComponent } from "../../components/loading/loading.component";
 
@@ -10,10 +10,15 @@ import { LoadingComponent } from "../../components/loading/loading.component";
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css',
 })
-export class BlogComponent {
+export class BlogComponent implements OnInit{
   @ViewChild('view') viewContainer!: ElementRef;
   public isExpand: boolean = false;
   public isLoader:boolean = true;
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.isLoader = false;
+    }, 2000);
+  }
   public expandImg(url:string) {
     this.isExpand = !this.isExpand;
     if(!this.isExpand){
