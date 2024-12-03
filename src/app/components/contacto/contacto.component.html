@@ -6,7 +6,7 @@
 <div class="flex justify-center">
   <div class="w-full flex gap-5">
     <div class="w-2/4">
-      <form class="grid grid-cols-2 gap-5 bg-white px-5 py-4 rounded-md">
+      <form class="grid grid-cols-2 gap-5 bg-white px-5 py-4 rounded-md" [formGroup]="formContact" (submit)="sendMessage()">
         <div class="col-span-2">
           <h3 class="text-center font-bold text-2xl mb-5">¿Vas a pensarlo?</h3>
           <p class="text-center font-semibold text-md">
@@ -14,30 +14,33 @@
           </p>
         </div>
         <div class="flex flex-col">
-          <label for="name">*Nombre</label>
+          <label for="nombre">*Nombre</label>
           <input
-            name="name"
-            id="name"
+            formControlName="nombre"
+            name="nombre"
+            id="nombre"
             class="rounded-md border-none focus:ring-0"
             type="text"
             placeholder="Nombre"
           />
         </div>
         <div class="flex flex-col">
-          <label for="lastname">*Apellido</label>
+          <label for="apellido">*Apellido</label>
           <input
-            name="lastname"
-            id="lastname"
+            formControlName="apellido"
+            name="apellido"
+            id="apellido"
             class="rounded-md border-none focus:ring-0"
             type="text"
             placeholder="Apellido"
           />
         </div>
         <div class="col-span-2 flex flex-col">
-          <label for="cellphone">*Telefono</label>
+          <label for="telefono">*Telefono</label>
           <input
-            name="cellphone"
-            id="cellphone"
+            formControlName="telefono"
+            name="telefono"
+            id="telefono"
             class="rounded-md border-none focus:ring-0"
             type="text"
             placeholder="Telefono"
@@ -46,6 +49,7 @@
         <div class="col-span-2 flex flex-col">
           <label for="email">*Email</label>
           <input
+            formControlName="email"
             name="email"
             id="email"
             class="rounded-md border-none focus:ring-0"
@@ -54,20 +58,22 @@
           />
         </div>
         <div class="col-span-2 flex flex-col">
-          <label for="date">*Fecha tentativa del evento</label>
+          <label for="fecha">*Fecha tentativa del evento</label>
           <input
-            name="date"
-            id="date"
+            formControlName="fecha"
+            name="fecha"
+            id="fecha"
             class="rounded-md border-none focus:ring-0"
             type="date"
             placeholder="Fecha tentativa del evento"
           />
         </div>
         <div class="col-span-2 flex flex-col">
-          <label for="cant">*Cant. aprox de invitados</label>
+          <label for="cantidad">*Cant. aprox de invitados</label>
           <input
-            name="cant"
-            id="cant"
+            formControlName="cantidad"
+            name="cantidad"
+            id="cantidad"
             class="rounded-md border-none focus:ring-0"
             type="text"
             placeholder="Cant. aprox de invitados"
@@ -75,6 +81,7 @@
         </div>
         <div class="col-span-2">
           <button
+            type="submit"
             class="ring-1 ring-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white font-bold py-2 px-4 w-full"
           >
             Enviar
