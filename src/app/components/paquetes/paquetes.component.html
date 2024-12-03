@@ -1,17 +1,17 @@
 <div class="flex justify-center">
-  <h2 class="font-extrabold text-4xl mb-20 border-b-2 border-black pb-2">
+  <h2 class="font-extrabold text-4xl md:mb-20 mb-10 border-b-2 border-black pb-2">
     PAQUETES
   </h2>
 </div>
 <ul>
-  <li class="flex mb-10 overflow-hidden">
+  <li class="flex md:flex-row flex-col mb-10 overflow-hidden">
     <div
-      class="flex flex-col items-center px-10 py-32 w-2/4 container"
+      class="flex flex-col items-center px-10 md:py-32 py-5 md:w-2/4 w-full container"
       [ngClass]="{ visible_container: visible1 }"
       id="img1"
       #img1
     >
-      <h3 class="text-center font-bold text-4xl mb-5 text-gray-800">CASA</h3>
+      <h3 class="text-center font-bold md:text-4xl text-3xl mb-5 text-gray-800">CASA</h3>
       <ul>
         <li class="text-center mb-5 font-bold text-gray-900">
           <span>$9,000.00</span>
@@ -27,19 +27,19 @@
       </ul>
     </div>
     <div
-      class="paquete_img_div_right w-2/4 flex justify-end relative"
+      class="paquete_img_div_right md:w-2/4 w-full"
       [ngClass]="{ img1: visible1 }"
     >
       <img
         src="img/5.jpg"
         alt="paquete 1"
-        class="img_paquete absolute -top-4 left-4 h-full"
+        class="img_paquete h-full"
       />
     </div>
   </li>
-  <li class="flex flex-row-reverse mb-10">
+  <li class="flex md:flex-row-reverse flex-col mb-10">
     <div
-      class="flex flex-col items-center px-10 py-32 w-2/4 container"
+      class="flex flex-col items-center px-10 md:py-32 py-5 md:w-2/4 w-full container"
       [ngClass]="{ visible_container: visible2 }"
       id="img2"
       #img2
@@ -75,19 +75,19 @@
       </ul>
     </div>
     <div
-      class="paquete_img_div w-2/4 flex relative"
+      class="paquete_img_div md:w-2/4 w-full flex relative"
       [ngClass]="{ img2: visible2 }"
     >
       <img
         src="kasagua/3.jpg"
         alt="paquete 1"
-        class="img_paquete absolute -bottom-4 right-4 h-full"
+        class="img_paquete h-full"
       />
     </div>
   </li>
-  <li class="flex mb-20 overflow-hidden">
+  <li class="flex md:flex-row flex-col mb-20 overflow-hidden">
     <div
-      class="flex flex-col items-center px-10 py-32 w-2/4 container"
+      class="flex flex-col items-center px-10 md:py-32 py-5 md:w-2/4 w-full container"
       [ngClass]="{ visible_container: visible3 }"
       id="img3"
       #img3
@@ -125,13 +125,13 @@
       </ul>
     </div>
     <div
-      class="paquete_img_div_right w-2/4 flex justify-end relative"
+      class="paquete_img_div_right md:w-2/4 w-full relative"
       [ngClass]="{ img1: visible3 }"
     >
       <img
         src="img/1.jpg"
         alt="paquete 1"
-        class="img_paquete absolute -top-4 left-4 h-full"
+        class="img_paquete h-full"
       />
     </div>
   </li>

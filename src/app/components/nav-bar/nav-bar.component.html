@@ -1,11 +1,11 @@
 <nav
-  class="flex justify-between text-white font-bold px-5 py-3 items-center w-full absolute z-10 top-0"
-  [ngClass]="{'nav': type}"
->
-  <a routerLink="/"
-    ><img src="img/logoK.png" alt="Novedade-ar" class="w-36"
-  /></a>
-  <ul class="flex gap-5">
+  class="flex md:flex-row flex-col md:justify-between text-white font-bold px-5 py-3 items-center w-full absolute z-10 top-0"
+  [ngClass]="{'nav': type}">
+
+  <a routerLink="/">
+    <img src="img/logoK.png" alt="Novedade-ar" class="md:w-36 w-20"/>
+  </a>
+  <ul class="md:flex grid grid-cols-4 md:gap-5 gap-1 text-sm">
     <li class="hover:text-gray-200">
       <a routerLink="/home">Inicio</a>
     </li>

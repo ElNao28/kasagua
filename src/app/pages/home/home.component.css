@@ -38,3 +38,8 @@ h1{
 footer{
   background-color: #161616;
 }
+@media (max-width: 768px) {
+  .slider{
+    height: 30vh;
+  }
+}
