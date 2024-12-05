@@ -4,9 +4,6 @@
   background-position: center;
   background-repeat: none;
 }
-img{
-  width: 50%;
-}
 .nosChildren{
   transform: translateX(100%);
   opacity: 0;
@@ -27,5 +24,13 @@ img{
   to{
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media (max-width: 768px){
+  .containerN{
+    background-size: auto;
+  }
+  .container{
+    width: 90%;
   }
 }
