@@ -28,6 +28,11 @@ export class ContactoComponent {
   });
 
   public sendMessage(){
-    console.log(this.formContact.value)
+    if(this.formContact.invalid){
+      return alert("Llena todos los campos");
+    }
+    this.conexionService.sendEmail(this.formContact.value).subscribe(res => {
+      console.log(res);
+    })
   }
 }
