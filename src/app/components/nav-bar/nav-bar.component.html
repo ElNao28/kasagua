@@ -4,7 +4,7 @@
   <a routerLink="/">
     <img src="img/logoK.png" alt="Novedade-ar" class="md:w-36 w-20"/>
   </a>
-  <ul class="md:gap-5 text-sm">
+  <ul class="md:gap-5 text-md">
     <li class="toggle">
       <button (click)="isShow =! isShow" class="flex flex-col gap-1">
         <div class="py-0.5 rounded-md px-4 bg-gray-200"></div>
@@ -12,7 +12,7 @@
         <div class="py-0.5 rounded-md px-4 bg-gray-200"></div>
       </button>
     </li>
-    <li class="hover:text-gray-200" [ngClass]="{'show': isShow}">
+    <li class="hover:text-gray-200 first" [ngClass]="{'show': isShow}">
       <a routerLink="/home">Inicio</a>
     </li>
     <li class="hover:text-gray-200" [ngClass]="{'show': isShow}">
