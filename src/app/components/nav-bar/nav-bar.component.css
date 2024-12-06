@@ -35,6 +35,9 @@ ul{
     margin-top: 5px;
     display: block;
   }
+  .first{
+    margin-top: 0.75rem;
+  }
   .toggle{
     display: block;
   }
