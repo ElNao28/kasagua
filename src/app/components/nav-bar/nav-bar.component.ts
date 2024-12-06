@@ -12,4 +12,5 @@ import { RouterLink } from '@angular/router';
 export class NavBarComponent {
   @Input()
   type:boolean = false;
+  public isShow:boolean = true;
 }
