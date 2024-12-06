@@ -1,27 +1,33 @@
-<nav
-  class="flex md:flex-row flex-col md:justify-between text-white font-bold px-5 py-3 items-center w-full absolute z-10 top-0"
-  [ngClass]="{'nav': type}">
+<nav class="visible text-white font-bold px-5 py-3 w-full absolute z-10 top-0">
+<!-- <nav class="flex md:flex-row flex-col md:justify-between items-center text-white font-bold px-5 py-3 w-full absolute z-10 top-0"> -->
 
   <a routerLink="/">
     <img src="img/logoK.png" alt="Novedade-ar" class="md:w-36 w-20"/>
   </a>
-  <ul class="md:flex grid grid-cols-4 md:gap-5 gap-1 text-sm">
-    <li class="hover:text-gray-200">
+  <ul class="md:gap-5 text-md">
+    <li class="toggle">
+      <button (click)="isShow =! isShow" class="flex flex-col gap-1">
+        <div class="py-0.5 rounded-md px-4 bg-gray-200"></div>
+        <div class="py-0.5 rounded-md px-4 bg-gray-200"></div>
+        <div class="py-0.5 rounded-md px-4 bg-gray-200"></div>
+      </button>
+    </li>
+    <li class="hover:text-gray-200 first" [ngClass]="{'show': isShow}">
       <a routerLink="/home">Inicio</a>
     </li>
-    <li class="hover:text-gray-200">
+    <li class="hover:text-gray-200" [ngClass]="{'show': isShow}">
       <a routerLink="" fragment="paquetes">Paquetes</a>
     </li>
-    <li class="hover:text-gray-200">
+    <li class="hover:text-gray-200" [ngClass]="{'show': isShow}">
       <a routerLink="" fragment="servicios">Servicios</a>
     </li>
-    <li class="hover:text-gray-200">
+    <li class="hover:text-gray-200" [ngClass]="{'show': isShow}">
       <a [routerLink]="['']" fragment="nosotros">Nosotros</a>
     </li>
-    <li class="hover:text-gray-200">
+    <li class="hover:text-gray-200" [ngClass]="{'show': isShow}">
       <a routerLink="" fragment="contacto">Contacto</a>
     </li>
-    <li class="hover:text-gray-200">
+    <li class="hover:text-gray-200" [ngClass]="{'show': isShow}">
       <a routerLink="/galeria">Galeria</a>
     </li>
   </ul>

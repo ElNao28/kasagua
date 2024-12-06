@@ -15,6 +15,36 @@
     background-color: rgba(37, 37, 37, 0.92);
   }
 } */
-.nav{
-  background-color: rgb(30, 30, 30);
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul{
+  display: flex;
+}
+.toggle{
+  display: none;
+}
+@media (max-width: 768px) {
+  nav{
+    flex-direction: row-reverse;
+    align-items: start;
+  }
+  ul{
+    margin-top: 5px;
+    display: block;
+  }
+  .first{
+    margin-top: 0.75rem;
+  }
+  .toggle{
+    display: block;
+  }
+  .show{
+    display: none;
+  }
+  .visible{
+    background-color: rgba(44, 44, 44, 0.305);
+  }
 }
