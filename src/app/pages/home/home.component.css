@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Yuji+Mai&display=swap');
+
 .slider{
   background-image: url('../../../../public/img/3.jpg');
   background-size: cover;
@@ -8,11 +8,12 @@
   height: 100vh;
 }
 h1{
-  font-family: "Yuji Mai", serif;
+  font-family: "Prata", serif;
+  font-weight: 400;
   font-style: normal;
 }
 .presentation{
-  font-family: "Ga Maamli", sans-serif;
+  font-family: "Prata", serif;
   font-weight: 400;
   font-style: normal;
 }
